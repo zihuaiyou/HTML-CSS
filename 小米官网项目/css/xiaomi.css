@@ -1,0 +1,472 @@
+/*黑色导航条样式开始*/
+.black-nav {
+    background-color: #333;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+.wrap {
+    width: 1226px;
+    margin: 0 auto;
+}
+.black-nav-left {
+    width:795px ;
+    height: 40px;
+    float: left;
+}
+.black-nav-right {
+    width:431px ;
+    height: 40px;
+    float: right;
+}
+.black-nav li {
+    float: left;
+    position: relative;
+}
+.black-nav a {
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.black-nav span {
+    font-size: 12px;
+    color: #424242;
+    margin: 0 .3em;
+}
+.black-nav a:hover{
+    color: #fff;
+}
+.cart .iconfont {
+    font-size: 18px;
+    margin-right: 4px;
+}
+.black-nav-right>ul {
+    float: right;
+
+}
+.cart {
+    width: 120px;
+    height: 40px;
+    background-color: #424242;
+    margin-left: 25px;
+    text-align: center;
+    /*设置光标为小手*/
+    cursor: pointer;
+}
+.cart:hover {
+    background-color: #fff;
+}
+.cart:hover>a {
+    color: #ff6700;
+}
+.downdload {
+    height:148px ;
+    width: 124px;
+    box-shadow: 0 1px 5px #aaa;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -62px;
+    display: none;
+    text-align: center;
+    z-index: 666;
+
+}
+
+.downdload-father:hover>.downdload{/*转换成块级标签就显示出来了*/
+    display: block;
+}
+.downdload>img {
+    height: 90px;
+    margin: 18px auto 0;
+
+}
+.downdload p {
+    line-height: 14px;
+    font-size: 14px;
+    color: #333;
+
+}
+.sanjiao {
+    height: 0;
+    width: 0;
+    border-left: 8px solid transparent ;/*transparent 透明的*/
+    border-right: 8px solid transparent ;
+    border-bottom: 8px solid #fff ;
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -8px;
+}
+
+.downdload-father:hover>.sanjiao {
+    display: block;
+}
+.cart-list {
+    font-size: 12px;
+    color: #424242;
+    width: 316px;
+    height: 0;
+    position: absolute;
+    right: 0;
+    top:40px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,.15);
+    transition: all 0.3s;/*用transition可以实现过渡效果 all是指所有属性都有过渡效果*/
+    overflow: hidden;/*让溢出的文字不显示*/
+    /*display: none;*/
+    z-index: 600;
+
+}
+
+.cart:hover>.cart-list {
+    /*display: block;*/ /*用display没有过渡效果，建议用transition*/
+    height: 100px;
+    line-height: 100px;/*行高等于高 可以让文字垂直居中*/
+
+}
+/*黑色导航条样式结束*/
+
+/*白色导航条开始*/
+.white-nav {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.logo {
+    width: 234px;
+    height: 100px;
+    float: left;
+}
+.logo>a {
+    display: block;
+    margin:22.5px 0; /*让图片水平居中*/
+    height: 55px;
+    width: 55px;
+    position: relative;
+    overflow: hidden;
+}
+.search {
+    height: 100px;
+    width: 296px;
+    float: left;
+    position: relative;
+}
+.nav-bar {
+    height: 100px;
+    width: 696px;
+    float: left;
+}
+.logo1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .15s;
+}
+.logo>a:hover>.logo1{
+    left: 100%;
+}
+
+.logo2 {
+    position: absolute;
+    top:0;
+    left: -100%;
+    transition: all .15s;
+}
+
+.logo>a:hover>.logo2 {
+    left:0;
+}
+.nav-bar>ul>li {
+    float:left ;
+}
+.nav-bar>ul>li>a {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    padding: 38px 10px;
+    height: 24px;
+
+}
+.nav-bar>ul>li:hover>a {
+    color: #ff6700;
+}
+
+.search input {
+    height: 50px;
+    width: 244px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    float: left;
+    margin-top: 25px;
+    padding: 0 10px;
+}
+.search button {
+    width: 52px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    float: left;
+    margin-top: 25px;
+    padding: 1px 6px;
+    font-size: 24px;
+    color: #616161;
+    background-color: #fff;
+    border-left: none;
+}
+.search input:hover,.search input:hover+button{
+    border-color: #b0b0b0;
+}
+.search button:hover {
+    background-color: #ff6700;
+    color: #fff;
+    border-color: transparent;
+    cursor: pointer;
+}
+.search input:focus,.search input:focus+button{
+    border-color: #ff6700;
+
+}
+/*下拉列表*/
+.nav-bar-list {
+    height: 229px;
+    width: 100%;
+    box-shadow: 0 3px 4px rgba(0,0,0,.18);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    border-top:1px solid #e0e0e0;
+    display: none;
+    background-color: #fff;
+    z-index: 555;
+
+}
+.nav-bar-list li {
+    width: 204px;
+    height: 229px;
+    float: left;
+}
+.img-box {
+    height: 110px;
+    width: 100%;
+    margin-top: 35px;
+    border-right:1px solid #e0e0e0 ;
+    box-sizing: border-box;
+}
+.img-box img {
+    height: 100%;
+    margin-left:20px ;
+}
+.img-box .name {
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    margin-top: 11px;
+}
+.img-box .price {
+    font-size: 12px;
+    color: #ff6700;
+    text-align: center;
+}
+.nav-bar-list li:last-child .img-box {
+    border-right: none;
+}
+#xiaomi:hover .nav-bar-list{
+    display: block;
+}
+#redmi:hover .nav-bar-list{
+    display: block;
+}
+#tv:hover .nav-bar-list{
+    display: block;
+}
+#laptop:hover .nav-bar-list,#HomeAppliances:hover .nav-bar-list,#ai:hover .nav-bar-list,#luyouqi:hover .nav-bar-list
+{
+    display: block;
+}
+
+
+.hot-list {
+    height: 240px;
+    width: 242px;
+    position: absolute;
+    left: 0;
+    top: 75px;
+    border: 1px solid #ff6700;
+    border-top: none;
+    background-color: #fff;
+    display: none;
+    cursor: pointer;
+    z-index: 520;
+
+
+}
+.hot-list li {
+    text-align: left;
+    padding:  6px 15px;
+
+}
+.hot-list li a{
+   font-size: 12px;
+    color: #424242;
+}
+
+.search input:focus~div{
+    display: block;
+}
+.hot-list li:hover {
+    background-color: #fafafa;
+}
+.hot-word {
+    height: 21px;
+    width: 150px;
+    position: absolute;
+    right: 125px;
+    top: 39.5px;
+}
+.hot-word a {
+    color: #757575;
+    font-size: 12px;
+    display: inline-block;
+    background-color: #eeeeee;
+    padding: 0 5px;
+    margin-left: 5px;
+}
+.hot-word a:hover {
+    background-color: #ff6700;
+    color: #fff;
+    transition: all .3s;
+}
+.search input:focus~.hot-word {
+    display: none;
+}
+/*白色导航条结束*/
+
+/*轮播图样式开始*/
+.banner {
+    height: 460px;
+    width: 100%;
+}
+.banner-box {
+    width: 1226px;
+    height: 460px;
+    background-image: url("../image/xiaomi10.jpg");
+    background-size: 100%;
+    animation: banner 20s linear infinite;/*总共循环20s 匀速 无限循环*/
+    position: relative;
+    cursor: pointer;
+}
+@keyframes banner { /*图片切换 0%是开始*/
+    0% {
+        background-image: url("../image/xiaomi10.jpg");
+    }
+    25% {
+        background-image: url("../image/xiaominote9.jpg");
+    }
+    50% {
+        background-image: url("../image/xioamitv.jpg");
+    }
+    75% {
+        background-image: url("../image/xiaomitvmaster.jpg");
+    }
+}
+.banner-box:hover {
+    animation-play-state: paused;
+}
+.slide {
+    width: 234px;
+    height: 420px;
+    background-color:rgba(105,101,101,.6);
+    padding:20px 0;
+    position: relative;
+}
+.slide>ul>li {
+    width: 234px;
+    height: 42px;
+    line-height: 42px;
+}
+.slide>ul>li>a {
+    font-size: 14px;
+    padding-left:30px ;
+    color: #fff;
+}
+.slide .iconfont {
+    float: right;
+    color: #e0e0e0;
+    font-size: 16px;
+    padding-right: 20px;
+
+}
+.slide>ul>li:hover {
+    background-color: #ff6700;
+}
+.slide-list {
+    height: 460px;
+    width: 992px;
+    border: 1px solid #e0e0e0;
+    border-left: none;
+    box-shadow: 0 8px 16px rgba(0,0,0,.18);
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 234px;
+    box-sizing: border-box;
+    display: none;
+    z-index: 555;
+}
+.slide>ul>li:hover>.slide-list {
+    display: block;
+}
+.slide-list>ul {
+    float: left;
+    width: 247px;
+}
+.slide-list li {
+    height: 76px;
+    padding: 18px 0 18px 20px;
+    box-sizing: border-box;
+
+
+
+
+}
+.slide-list img {
+    height: 40px;
+    margin-right: 14px;
+    float: left;
+
+}
+.slide-list span {
+    color: #333;
+    font-size: 14px;
+    float: left;
+
+}
+.left-arrow,.right-arrow {
+    width: 41px;
+    height: 69px;
+    position: absolute;
+    top: 50%;
+    margin-top: -34.5px;
+    background-image: url("../image/icon-slides.png");
+    cursor: pointer;
+    z-index: 500;
+}
+.right-arrow {
+    right: 0;
+    background-position:-124px ;/*背景图片定位*/
+}
+.left-arrow {
+    margin-left:234px;
+    background-position:-83px;
+}
+.left-arrow:hover {
+    background-position: 0;
+}
+.right-arrow:hover {
+    background-position: -42px;
+}
+/*轮播图样式结束*/
+
+/*广告区域样式开始*/
