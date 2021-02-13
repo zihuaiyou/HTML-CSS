@@ -132,6 +132,7 @@
     width: 100%;
     height: 100px;
     position: relative;
+    background-color: #fff;
 }
 
 .logo {
@@ -347,6 +348,7 @@
 .banner {
     height: 460px;
     width: 100%;
+    background-color:#fff;
 }
 .banner-box {
     width: 1226px;
@@ -470,3 +472,449 @@
 /*轮播图样式结束*/
 
 /*广告区域样式开始*/
+.ad {
+    width: 100%;
+    height: 170px;
+    padding: 14px 0 26px;
+    background-color: #fff;
+}
+.ad-black {
+    width: 234px;
+    height: 170px;
+    background-color: #5f5750;
+    float: left;
+    padding:3px;
+    box-sizing: border-box;
+}
+.ad-box {
+    width:316px;
+    height: 170px;
+    margin-left: 14.66px;
+    float: left;
+    transition: all linear .1s;
+}
+.ad-box img {
+    width: 100%;
+}
+.ad-box:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+}
+.ad-black li  {
+    float: left;
+    width: 76px;
+    height: 82px;
+    text-align: center;
+    position: relative;
+}
+.ad-black a {
+    display: block;
+    color: #fff;
+    opacity: .7;
+    font-size: 12px;
+    margin-top: 18px;
+    transition: all .2s;
+}
+.ad-black i {
+    display: block;
+    font-size: 24px;
+    padding-bottom: 5px;
+}
+.ad-black li:hover a {
+    opacity: 1;
+}
+.col::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 70px;
+    background-color: #665e57;
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+.row::before {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 1px;
+    background-color: #665e57;
+    position: absolute;
+    bottom: 0;
+    left: 6px;
+}
+/*广告区域样式结束*/
+/*小米秒杀样式开始*/
+.container {
+    width: 100%;
+    padding: 4px 12px;
+
+}
+.title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    color: #333;
+    text-align: left;
+    height: 58px;
+    clear: both;
+}
+.flash-box>div {
+    border-top: 1px solid #e53935;
+}
+.items1 {
+    width: 234px;
+    height: 339px;
+    margin-left: 14px;
+    padding-top: 39px;
+    background-color: #fff;
+    float: left;
+}
+
+.flash-box>div:nth-child(2){ /*选择flash-box 下面的div子标签*/
+    border-top-color: #00c0a5;
+}
+.flash-box>div:nth-child(3){
+    border-top-color: #ffac13;
+}
+.flash-box>div:nth-child(4){
+    border-top-color: #e53935;
+}
+.flash-box>div:nth-child(5){
+    border-top-color: #2196f3;
+}
+.items1 img {
+    width: 160px;
+    margin:30px 37px 22px ;
+}
+.items1 .name1 {
+    width: 194px;
+    height: 21px;
+    margin:0 auto 3px;/*让标签居中用margin：0 auto*/
+    text-align: center;/*让标签里的内容居中用text-align*/
+    font-size: 14px;
+    color: #212121;
+    white-space:nowrap;/*文本一行显示*/
+    overflow: hidden;
+    text-overflow: ellipsis;/*文本溢出用...显示*/
+}
+.items1 .name2 {
+    font-size: 12px;
+    color: #b0b0b0;
+    text-align: center;
+    margin: 0 auto 12px;
+}
+.items1 .price {
+    color: #ff6709;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+}
+.items1 .price s {
+    color: #b0b0b0;
+}
+.items2 .time {
+    font-size: 21px;
+    padding-bottom: 15px;
+    color: #ef3a3b;
+    text-align: center;
+}
+.items2 .time~p {
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+    text-align: center;
+}
+.items2 img {
+    width: 34px;
+    margin: 25px 100px;
+}
+.ad-img {
+    height: 120px;
+    width: 100%;
+    margin: 22px 0;
+    float: left;
+    background-image: url("../image/note9.jpg");
+    cursor: pointer;
+}
+/*小米秒杀样式结束*/
+
+/*手机样式开始*/
+.more {
+    float: right;
+    font-size: 16px;
+    color: #424242;
+    line-height: 58px;
+    transition: all .4s;
+}
+.more i {
+    padding: 4px;
+    margin-left: 8px;
+}
+.more:hover {
+    color: #ff6700;
+}
+.phone-box>.phone-box-left {
+    width: 234px;
+    height: 614px;
+    float: left;
+    transition: all .2s linear;
+}
+.phone-box-left img {
+    width: 100%;
+}
+.phone-box>.phone-box-right {
+    width: 992px;
+    height: 614px;
+    float: right;
+}
+.items3 {
+    height: 300px;
+    padding: 20px 0;
+    margin-left: 14px;
+    margin-bottom: 14px;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+.items3 img {
+    margin: 0 37px;
+    text-align: center;
+}
+.items3 .name1 {
+    font-size: 14px;
+    margin: 0 10px 2px;
+}
+.items3:hover,.phone-box-left:hover,.video-box:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+    transform: translate3d(0,-2px,0);/*等同于transform: translateY(-2px);*/
+}
+.phone .ad-img {
+    background-image: url("../image/mitv.jpg");
+}
+.items2 {
+    margin-left: 0;
+    background-color: rgb(241, 237, 237);
+    padding-top:0 ; /*为了修正家电区第一个图padding问题，放在.items3之后*/
+}
+.flash-box>div:first-child {
+    padding-top: 39px; /*修正小米秒杀图的问题*/
+}
+/*手机样式结束*/
+
+/*家电版块样式开始*/
+.elc-box {
+    width: 100%;
+
+}
+.elc-box>.items2 img {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+.items4 {
+    height: 143px;
+    margin-bottom: 14px;
+    position: relative;
+}
+.items4 div{
+    position: absolute;
+    left: 0;
+    top:157px ;
+    height: 143px;
+    width: 100%;
+    background-color: #fff;
+    margin-left: 0;
+}
+.elc >.ad-img {
+    background-image: url("../image/adimg.jpg");
+}
+/*家电版块样式结束*/
+
+/*智能、搭配、配件、周边版块样式开始*/
+.zhineng>.ad-img {
+    background-image: url("../image/adimg1.jpg");
+}
+.dapei >.ad-img {
+    background-image: url("../image/adimg2.jpg");
+}
+.peijian >.ad-img {
+    background-image: url("../image/adimg3.jpg");
+}
+.zhoubian >.ad-img {
+    background-image: url("../image/adimg4.jpg");
+}
+/*智能、搭配、配件、周边版块样式结束*/
+
+/*视频样式开始*/
+.video-box {
+    height: 285px;
+    width: 296px;
+    margin-bottom: 22px;
+    background-color: #fff;
+    float: left;
+    margin-left: 14px;
+    transition: all .2s linear;
+}
+.video-box1{
+    margin-left: 0;
+}
+.btn-box {
+    width: 100%;
+    height: 180px;
+    position: relative;
+}
+.video-box img {
+    width: 100%;
+    height: 100%;
+
+}
+.btn {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    width: 32px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    color: #fff;
+    overflow: hidden;
+    transition: all .2s;
+}
+.btn i {
+    position: relative;
+    left: 10px;
+}
+.btn:hover {
+    background-color: #ff6700;
+    border-color: #ff6700;
+}
+.btn-box p{
+    margin: 28px 14px 6px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #333;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/*视频样式结束*/
+
+/*页脚样式开始*/
+.footer {
+    width: 100%;
+    background-color: #fff;
+    height: 292.5px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+.fuwu {
+    padding:27px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.fuwu li {
+    float: left;
+    width: 19.8%;
+    height: 25px;
+    border-left: 1px solid #e0e0e0;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+
+}
+.fuwu a{
+    color: #333;
+    transition: color .2s;
+}
+.fuwu ul {
+    height: 25px;/*解决浮动问题*/
+}
+.fuwu .iconfont {
+    margin-right: 6px;
+    font-size: 24px;
+    line-height: 24px;
+    position: relative;
+    top: 3px;
+}
+.fuwu li:hover a {
+    color: #ff6700;
+}
+.link {
+    padding: 40px 0;
+    height: 252.5px;
+    box-sizing: border-box;
+}
+.link ul {
+    float: left;
+    width: 160px;
+    margin: 0;
+    text-align: left;
+    height: 116.5px;
+}
+.link li {
+    margin: 10px 0 0;
+    font-size: 12px;
+}
+.link li:first-child {
+    margin: -1px 0 26px;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #424242;
+}
+.link li a {
+    color: #757575;
+}
+.contact {
+   float: right;
+    width: 251px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    color: #616161;
+}
+.tel {
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6700;
+    margin: 0 0 5px 0;
+    text-align: center;
+    display: block;
+}
+.tel+p {
+    margin: 0 0 5px 0;
+    font-size: 12px;
+    text-align: center;
+    color: #616161;
+}
+.contact p .iconfont {
+    color: #f25807;
+}
+.contact {
+    height: 116.5px;
+}
+
+.button {
+    width: 118px;
+    height: 28px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #ff6700;
+    transition: all .4s;
+    box-sizing: border-box;
+}
+.button i,.button a {
+    text-align: center;
+    line-height: 28px;
+    font-size: 12px;
+    color: #ff6700;
+}
+.button:hover{
+    background-color: #ff6700;
+
+}
+.button:hover i,.button:hover a {
+    color: #fff;
+}
+.link li:hover a{
+    color: #ff6700;
+}
+/*页脚样式结束*/
